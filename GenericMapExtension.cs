@@ -10,7 +10,7 @@ namespace PrograIntermedia {
         public static void aver() {
             Console.WriteLine();
         }
-        public static Derivate First(this GenericMap<Derivate> map) {
+        public static T First<T>(this GenericMap<T> map) where T : Abstract {
             return map[0];
         }
     }
